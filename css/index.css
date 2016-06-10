@@ -1,0 +1,58 @@
+
+.cell, .obstacle {
+    /*float: left;*/
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border: 2px solid transparent;
+    background-color: crimson;
+    border-collapse: collapse;
+}
+
+.black {
+    background-color: aqua;
+}
+
+.up {
+    border-top-color: aquamarine;
+}
+
+.down {
+    border-bottom-color: aquamarine;
+}
+
+.right {
+    border-right-color: aquamarine;
+}
+
+.left {
+    border-left-color: aquamarine;
+}
+
+.obstacle {
+    background-color: mediumaquamarine;
+}
+
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
+}
+
+.visited {
+    background-color: blue;
+}
+
+#maze {
+    border: 2px solid blueviolet;
+    height:auto;
+    display: inline-block;
+    overflow: scroll;
+    background-color: crimson;
+}
+
+.row {
+    font-size: 0;
+}

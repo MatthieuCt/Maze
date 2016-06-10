@@ -1,0 +1,39 @@
+<html  charset=utf-8>
+<head>
+    <title>Maze</title>
+    <link href="css/index.css" rel="stylesheet" title="Default Style">
+</head>
+<body>
+
+<div>
+    <label for="maze-width">Width:</label>
+    <input id="maze-width" type="number" value="3">
+    <label for="maze-height">Height:</label>
+    <input id="maze-height" type="number" value="3">
+    <button type="submit" onclick="generateMaze()">Generate Maze</button>
+</div>
+<div>
+    <label for="maze-import">Import Maze</label>
+    <input id="maze-import" type="file" />
+    <button onclick="importMaze()">Import</button>
+</div>
+
+<div class="resolution">
+    <button onclick="nextStepSolveMaze()" disabled>next step</button>
+    <button onclick="solveMaze()" disabled>Solve</button>
+</div>
+
+<div id="maze-json"></div>
+
+<h3>Map</h3>
+<div id="maze-grid"></div>
+<div id="maze-3D"></div>
+
+<div id="maze"></div>
+
+<script src="js/three.js"></script>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="bower_components/pathfinding/pathfinding-browser.js"></script>
+<script src="js/mazegenerator.js"></script>
+</body>
+</html>
